@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Documentation</title>
+	<link rel="stylesheet" href="/css/Style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="title">
+			<h1>
+				Все типы и значения свойства display (CSS)
+			</h1>
+		</header>
+		<aside class="aside">
+			<div class="aside__title">
+				<h2>
+					Display type list
+				</h2>
+			</div>
+			<nav class="aside__menu menu">
+				<ul class="menu__list">
+					<li>
+						<a class="menu__item" href="#none">
+							None
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Block">
+							Block
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Flex">
+							Flex
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Grid">
+							Grid
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Sub-grid">
+							Sub-grid
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Contents">
+							Contents
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Flow-root">
+							Flow-root
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#List-item">
+							List-item
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Run-in">
+							Run-in
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Inherit">
+							Inherit
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Initial">
+							Initial
+						</a>
+					</li>
+					<li>
+						<a class="menu__item" href="#Unset">
+							Unset
+						</a>
+					</li>
+					<li>
+						<a class="menu__item more" href="#Table">
+							Table
+						</a>
+						<ul class="sub-menu__list">
+							<li>
+								<a class="sub-menu__item" href="#table-caption">
+									table-caption
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#table-column">
+									table-column
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#table-column-group">
+									table-column-group
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#table-row">
+									table-row
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#table-row-group">
+									table-row-group
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#table-header-group">
+									table-header-group
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#table-footer-group">
+									table-footer-group
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#table-cell">
+									table-cell
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="menu__item more" href="#inline">
+							Inline
+						</a>
+						<ul class="sub-menu__list">
+							<li>
+								<a class="sub-menu__item" href="#inline-block">
+									inline-block
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#inline-flex">
+									inline-flex
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#inline-grid">
+									inline-grid
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#inline-table">
+									inline-table
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#inline-box">
+									inline-box
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="menu__item more" href="#Ruby">
+							Ruby
+						</a>
+						<ul class="sub-menu__list">
+							<li>
+								<a class="sub-menu__item" href="#ruby-base">
+									ruby-base
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#ruby-base-container">
+									ruby-base-container
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#ruby-text">
+									ruby-text
+								</a>
+							</li>
+							<li>
+								<a class="sub-menu__item" href="#ruby-text-container">
+									ruby-text-container
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="main">
+			<div class="main__title">
+				<h2>
+					Type display description
+				</h2>
+			</div>
+			<div class="main__content item">
+				<div class="item__block">
+					<h3 class="item__name" id="none">
+						None
+					</h3>
+					<p class="item__value">
+						Это свойство скрывает элемент полностью и удаляет его из потока документа. Это означает, что
+						элемент не занимает места на странице, и он не будет виден пользователю.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Block">
+						Block
+					</h3>
+					<p class="item__value">
+						Это свойство делает элемент блочным, что означает, что элемент будет занимать всю доступную
+						ширину на странице и будет располагаться под предыдущим элементом.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Flex">
+						Flex
+					</h3>
+					<p class="item__value">
+						Это свойство делает элемент контейнером для flexbox-элементов. Это означает, что элемент
+						будет
+						управлять поведением и расположением своих дочерних элементов, используя свойства flexbox.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Grid">
+						Grid
+					</h3>
+					<p class="item__value">
+						Это свойство делает элемент контейнером для grid-элементов. Grid-элементы используются для
+						создания сеток, которые могут быть настроены для управления размещением и размерами
+						элементов
+						внутри сетки.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Sub-grid">
+						Subgrid
+					</h3>
+					<p class="item__value">
+						Это свойство позволяет элементу-потомку наследовать сеточные линии из своего родительского
+						элемента, когда он находится внутри grid-контейнера, который использует свойство
+						grid-template-rows или grid-template-columns.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Contents">
+						Contents
+					</h3>
+					<p class="item__value">
+						Это свойство преобразует элемент в контейнер, который содержит только контент, расположенный
+						внутри элемента, и не включает в себя отступы, границы или фон.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Flow-root">
+						Flow-root
+					</h3>
+					<p class="item__value">
+						Это свойство устанавливает блочный контейнер, который создает новый блочный форматированный
+						контекст и содержит дочерние элементы в этом контексте. Это свойство может быть полезно для
+						решения проблем с переполнением контента и позиционированием.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="List-item">
+						List-item
+					</h3>
+					<p class="item__value">
+						Это свойство делает элемент контейнером для элементов списка, таких как li. Это свойство
+						обычно
+						используется в сочетании со свойством list-style для создания списка с маркерами.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Run-in">
+						Run-in
+					</h3>
+					<p class="item__value">
+						Это свойство определяет, как элементы будут взаимодействовать друг с другом, когда они
+						находятся
+						на одной строке. Если элементы имеют свойство display: run-in, они будут встраиваться в
+						контекст
+						своих соседних элементов, если это возможно.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Inherit">
+						Inherit
+					</h3>
+					<p class="item__value">
+						Это свойство наследует значение свойства display у родительского элемента.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Initial">
+						Initial
+					</h3>
+					<p class="item__value">
+						Это свойство устанавливает начальное значение свойства display для элемента, которое зависит
+						от
+						типа элемента. Например, для большинства элементов, значение свойства initial будет display:
+						inline.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Unset">
+						Unset
+					</h3>
+					<p class="item__value">
+						Это свойство сбрасывает значение свойства display элемента на его исходное значение. Если у
+						элемента было задано значение display через CSS-правило, то свойство unset сбросит это
+						значение
+						на исходное значение, которое задано в стандарте для этого элемента.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Table">
+						Table
+					</h3>
+					<p class="item__value">
+						Это свойство делает элемент блочным контейнером для таблицы, который содержит один или
+						несколько
+						элементов table-row. Он может также содержать элементы table-caption, table-column-group,
+						table-header-group и table-footer-group.
+					</p>
+					<h4 class="item__subname" id="table-caption">
+						table-caption
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент внутри контейнера table заголовком таблицы,
+						который располагается над самой таблицей.
+					</p>
+					<h4 class="item__subname" id="table-column">
+						table-column
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент-контейнер, который представляет одну колонку таблицы. Он
+						используется для управления шириной колонки и ее свойствами.
+					</p>
+					<h4 class="item__subname" id="table-column-group">
+						table-column-group
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент-контейнер, который представляет группу колонок таблицы. Он
+						используется для управления шириной нескольких колонок и их свойствами.
+					</p>
+					<h4 class="item__subname" id="table-row">
+						table-row
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент-контейнер, который представляет одну строку таблицы. Он может
+						содержать один или несколько элементов table-cell
+					</p>
+					<h4 class="item__subname" id="table-row-group">
+						table-row-group
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент-контейнер, который представляет группу строк таблицы. Он
+						используется для управления свойствами группы строк таблицы.
+					</p>
+					<h4 class="item__subname" id="table-header-group">
+						table-header-group
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент-контейнер, который представляет заголовки таблицы. Он содержит
+						одну
+						или несколько групп строк таблицы.
+					</p>
+					<h4 class="item__subname" id="table-footer-group">
+						table-footer-group
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент-контейнер, который представляет нижние части таблицы. Он
+						содержит
+						одну или несколько групп строк таблицы.
+					</p>
+					<h4 class="item__subname" id="table-cell">
+						table-cell
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент-контейнер, который представляет одну ячейку таблицы. Он должен
+						быть
+						вложен в элемент table-row. Он может содержать любой контент, включая другие элементы и
+						таблицы.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="inline">
+						Inline
+					</h3>
+					<p class="item__value">
+						Это свойство делает элемент инлайновым, что означает, что он может быть расположен в строке
+						с
+						другими элементами. Элемент inline не может иметь высоты и ширины и должен быть по размеру
+						своего контента.
+					</p>
+					<h4 class="item__subname" id="inline-block">
+						Inline-block
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент инлайновым блоком, который может быть расположен в строке с
+						другими
+						элементами и иметь свойства блочного элемента, такие как высоту, ширину и поля.
+					</p>
+					<h4 class="item__subname" id="inline-flex">
+						Inline-flex
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент инлайновым элементом, который использует гибкие свойства
+						расположения, как в элементе flex.
+					</p>
+					<h4 class="item__subname" id="inline-grid">
+						Inline-grid
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент инлайновым элементом, который использует сетку для расположения
+						содержимого.
+					</p>
+					<h4 class="item__subname" id="inline-table">
+						Inline-table
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент инлайновым элементом, который представляет собой таблицу, но
+						может
+						быть расположен в строке с другими элементами.
+					</p>
+					<h4 class="item__subname" id="inline-box">
+						Inline-box
+					</h4>
+					<p class="item__subvalue">
+						Это свойство делает элемент инлайновым элементом, который использует свойства боксового
+						элемента, как в элементе box. Это свойство не является частью стандартной спецификации CSS и
+						не
+						поддерживается всеми браузерами.
+					</p>
+				</div>
+				<div class="item__block">
+					<h3 class="item__name" id="Ruby">
+						Ruby
+					</h3>
+					<p class="item__value">
+						Это свойство позволяет определить Ruby-разметку для элемента. Оно делает элемент
+						родительским
+						для Ruby-разметки, которая состоит из параллельных фрагментов текста, размещенных над
+						основным
+						текстом, и используется для указания фонетической пометки для сложных символов. Это свойство
+						задает контейнер, который содержит как ruby-base-container, так и ruby-text-container.
+					</p>
+					<h4 class="item__subname" id="ruby-base">
+						Ruby-base
+					</h4>
+					<p class="item__subvalue">
+						Это свойство задает текст, который используется в основном содержании элемента
+						Ruby-разметки.
+						Оно указывает на текстовый фрагмент, для которого будет добавлена руби-надпись.
+					</p>
+					<h4 class="item__subname" id="ruby-base-container">
+						Ruby-base-container
+					</h4>
+					<p class="item__subvalue">
+						Это свойство задает контейнер, который содержит ruby-base. Это свойство определяет элемент,
+						содержащий текст, для которого будет добавлена руби-надпись.
+					</p>
+					<h4 class="item__subname" id="ruby-text">
+						Ruby-text
+					</h4>
+					<p class="item__subvalue">
+						Это свойство задает текст, который будет использоваться для написания руби-надписи в
+						Ruby-разметке. Оно указывает на текст, который будет добавлен над основным текстом.
+					</p>
+					<h4 class="item__subname" id="ruby-text-container">
+						Ruby-text-container
+					</h4>
+					<p class="item__subvalue">
+						Это свойство задает контейнер, который содержит ruby-text. Оно определяет элемент,
+						содержащий
+						текст, который будет использоваться для написания руби-надписи.
+					</p>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

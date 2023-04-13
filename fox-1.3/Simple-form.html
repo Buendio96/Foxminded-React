@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/Style.css">
+	<title>Simple form design</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<form class="form" action="#" autocomplete="on" name="Simple-form" method="post" enctype="multipart/form-data">
+			<div class="form__title">
+				<h1>
+					Create Account
+				</h1>
+			</div>
+			<div class="form__body">
+				<div class="form__line">
+					<div class="form__line-item">
+						<label for="FirstName">
+							<h3 class="form__line-title">First name*</h3>
+							<input class="form__line-box" type="text" name="FirstName" id="FirstName"
+								placeholder="enter your first name" required>
+						</label>
+					</div>
+					<div class="form__line-item">
+						<label for="LastName">
+							<h3 class="form__line-title">Last name</h3>
+							<input class="form__line-box" type="text" name="LastName" id="LastName"
+								placeholder="enter your last name">
+						</label>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__line-item">
+						<label for="email">
+							<h3 class="form__line-title">Email*</h3>
+							<input class="form__line-box" type="email" name="email" id="email"
+								placeholder="enter your email" required>
+						</label>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__line-item">
+						<label for="password">
+							<h3 class="form__line-title">Password*</h3>
+							<input class="form__line-box" type="password" name="password" id="password"
+								placeholder="enter your password" required>
+						</label>
+					</div>
+					<div class="form__line-item">
+						<label for="repassword">
+							<h3 class="form__line-title">Confirm Password*</h3>
+							<input class="form__line-box" type="password" name="password" id="repassword"
+								placeholder="enter your password again" required>
+						</label>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__line-item">
+						<h2 class="form__line-title">
+							Gender:
+						</h2>
+						<div class="form__line-container">
+							<label for="gender-man">
+								<input type="radio" name="gender" value="man" id="gender-man">
+								<h3 class="form__line-subtitle">Male</h3>
+							</label>
+							<label for="gender-woman">
+								<input type="radio" name="gender" value="woman" id="gender-woman">
+								<h3 class="form__line-subtitle">Female</h3>
+							</label>
+						</div>
+					</div>
+					<div class="form__line-item">
+						<h2 class="form__line-title">
+							Hobbies
+						</h2>
+						<div class="form__line-container">
+							<label for="music">
+								<input type="checkbox" name="music" id="music" value="hobby">
+								<h3 class="form__line-subtitle">Music</h3>
+							</label>
+							<label for="books">
+								<input type="checkbox" name="books" id="books" value="hobby">
+								<h3 class="form__line-subtitle">Books</h3>
+							</label>
+							<label for="gym">
+								<input type="checkbox" name="gym" id="gym" value="hobby">
+								<h3 class="form__line-subtitle">Gym</h3>
+							</label>
+							<label for="travel">
+								<input type="checkbox" name="travel" id="travel" value="hobby">
+								<h3 class="form__line-subtitle">Travel</h3>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__line-item">
+						<label for="choose-income">
+							<h3 class="form__line-title">
+								Source of Income
+							</h3>
+							<select class="form__line-box income" id="choose-income">
+								<option value="wage-worker" label="Wage-worker"></option>
+								<option value="employer" label="Employer"></option>
+								<option value="freelancer" label="Freelancer" selected></option>
+								<option value="artiste" label="Artiste"></option>
+							</select>
+						</label>
+					</div>
+					<div class="form__line-item">
+						<label for="income">
+							<h3 class="form__line-title">
+								Income
+							</h3>
+							<input type="range" name="income" min="1" max="1000" value="1" id="income"
+								class="form__line-slider">
+							<div id="value" class="form__line-value">
+							</div>
+						</label>
+					</div>
+					<script src="script.js"></script>
+				</div>
+				<div class="form__line">
+					<div class="form__line-item">
+						<label for="add-file">
+							<h3 class="form__line-title">
+								Upload Profile Picture
+							</h3>
+							<input type="file" multiple id="add-file">
+						</label>
+					</div>
+					<div class="form__line-item">
+						<label for="age">
+							<h3 class="form__line-title">
+								Age
+							</h3>
+							<input class="form__line-box age" type="number" id="age">
+						</label>
+					</div>
+				</div>
+				<div class="form__line">
+					<div class="form__line-item">
+						<label for="bio">
+							<h3 class="form__line-title">
+								Bio
+							</h3>
+							<textarea class="form__line-box bio" name="bio" id="bio"
+								placeholder="Describe yourself"></textarea>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form__submit">
+				<input class="form__submit-input" type="submit" name="Create" value="Create">
+				<input class="form__submit-input" type="reset" name="Reset" value="Reset">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

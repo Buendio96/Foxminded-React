@@ -1,0 +1,116 @@
+@import url("/FLEXit/css/Reset.css");
+body {
+	background-color: #78a5a3;
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	background-color: #ce5a57;
+	box-shadow: 0px 0px 15px 4px #ce5a57;
+	font-family: "Times New Roman", Times, serif;
+}
+.header {
+	text-align: center;
+	padding: 0 5%;
+	color: #39404e;
+	border-bottom: 2px solid #39404e;
+	&__title {
+		font-size: 30px;
+		padding: 30px 0;
+		font-weight: 700;
+	}
+	&__subtitle {
+		font-size: 24px;
+		margin: 0 0 20px 0;
+		font-weight: 600;
+	}
+	&__text {
+		font-size: 20px;
+		margin: 0 0 15px 0;
+		font-weight: 500;
+	}
+}
+.main {
+	flex: 1 1 auto;
+	display: flex;
+	@media (max-width: 1080px) {
+		flex-wrap: wrap;
+	}
+	&__nav {
+		flex: 1 0 25%;
+		background-color: #e1b16a;
+		padding: 20px 15px;
+		box-shadow: inset 0px 0px 10px 2px #7c623b;
+	}
+	&__general {
+		padding: 25px 15px;
+		border-left: 2px solid #39404e;
+		border-right: 2px solid #39404e;
+		@media (max-width: 1080px) {
+			border-left: none;
+			border-right: none;
+			border-top: 2px solid #39404e;
+			border-bottom: 2px solid #39404e;
+		}
+	}
+	&__aside {
+		flex: 1 0 25%;
+		background-color: #e1b16a;
+		padding: 20px 15px;
+		box-shadow: inset 0px 0px 10px 2px #7c623b;
+	}
+}
+.nav {
+	&__list {
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+	&__link {
+		display: inline-block;
+		color: #7c623b;
+		font-weight: 600;
+		padding: 0 0 8px 0;
+	}
+}
+.general {
+	&__title {
+		text-align: center;
+		margin: 0 0 25px 0;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	&__text {
+		font-size: 17px;
+		line-height: 1.1;
+	}
+}
+.aside {
+	&__list {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+			sans-serif;
+	}
+	&__link {
+		color: #7c623b;
+		font-weight: 600;
+		display: inline-block;
+		padding: 0 0 8px 0;
+	}
+}
+.footer {
+	width: 100%;
+	min-height: 100px;
+	background-color: #78a5a3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0px 0px 10px 2px #587a79;
+	text-align: center;
+	&__license {
+		font-size: 20px;
+		font-weight: 600;
+		color: #9b4340;
+	}
+}
