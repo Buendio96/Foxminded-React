@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDo List</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="shortcut icon" href="/img/check.png">
+	<script src="/main.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="container__title">
+			<h1>
+				ToDo list
+			</h1>
+		</div>
+		<div class="container__body to-do">
+			<form class="to-do__form" id="ToDo-Form">
+				<input type="text" class="to-do__input" autocomplete="off" id="ToDo-Input"
+					placeholder="Add your own task to the list.">
+				<button type="submit" class="to-do__submit">
+					Edit
+				</button>
+			</form>
+			<div class="to-do__list">
+				<ul class="to-do__list-box" id="ToDo-List">
+
+				</ul>
+				<div class="item__commands">
+					<button type="button" id="ToDo-Clear" class="item__command clear-all">
+						Clear list
+					</button>
+					<button type="button" id="ToDo-Clear-Completed" class="item__command clear-chosen">
+						Delete completed tasks
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>List Of Countries</title>
+	<link rel="stylesheet" href="/css/Style.css">
+</head>
+
+<body class="dark">
+	<div class="wrapper dark-theme" id="Wrapper">
+		<header class="header dark-theme">
+			<div class="header__title">
+				<h1>
+					Where in the world?
+				</h1>
+			</div>
+			<div class="header__switch ">
+				<label class="header__switch-box">
+					<input id="Toggle" type="checkbox" class="header__switch-input">
+					<span id="Theme_Switch_Slider" class="header__switch-slider"></span>
+				</label>
+			</div>
+			<nav class="header__navigation ">
+				<div class="header__navigation-input-box dark-theme-border dark-theme">
+					<input id="Input" class="header__navigation-search dark-theme" autocomplete="off" type="text"
+						placeholder="Search for a country...">
+					<button type="button" class="header__navigation-search-img  dark-theme">
+						<img src="/source/glass.png" alt="">
+					</button>
+				</div>
+				<div class="header__navigation-error-box  dark-theme dark-theme-border" id="Error">
+				</div>
+				<div class="header__navigation-region dark-theme-border dark-theme">
+					<h2 class="header__navigation-region-title  dark-theme">
+						Region
+					</h2>
+					<ul class="header__navigation-region-list dark-theme-border  dark-theme" id="Filters">
+						<li>
+							<button id="All" type="button" class="header__navigation-region-list-item  dark-theme">
+								All
+							</button>
+						</li>
+						<li>
+							<button id="Africa" type="button" class="header__navigation-region-list-item  dark-theme">
+								Africa
+							</button>
+						</li>
+						<li>
+							<button id="Americas" type="button" class="header__navigation-region-list-item  dark-theme">
+								Americas
+							</button>
+						</li>
+						<li>
+							<button id="Asia" type="button" class="header__navigation-region-list-item  dark-theme">
+								Asia
+							</button>
+						</li>
+						<li>
+							<button id="Europe" type="button" class="header__navigation-region-list-item  dark-theme">
+								Europe
+							</button>
+						</li>
+						<li>
+							<button id="Oceania" type="button" class="header__navigation-region-list-item  dark-theme">
+								Oceania
+							</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="main" id="Container">
+		</main>
+	</div>
+	<script src="/Script.js"></script>
+</body>
+
+</html>

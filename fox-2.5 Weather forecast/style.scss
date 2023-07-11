@@ -1,0 +1,219 @@
+@import url("/css/Reset.css");
+
+$Violet-blue: #d0e1f9;
+$Bilberry: #4d648d;
+$Inky-indigo: #283655;
+$Midnight-sun: #1e1f26;
+
+body {
+	background: $Violet-blue;
+	width: 100%;
+	height: 100vh;
+}
+.wrapper {
+	width: 350px;
+	margin: 2% auto;
+}
+.weather {
+	display: flex;
+	flex-direction: column;
+	&__search {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		border-bottom: 3px solid $Bilberry;
+		background: #fff;
+		transition: all 0.3s ease;
+		border-radius: 20px 20px 0 0;
+		overflow: hidden;
+		&:hover {
+			transform: scale(1.05);
+			box-shadow: 0 5px 10px 2px $Inky-indigo;
+		}
+	}
+	&__search-input {
+		height: 100%;
+		width: 100%;
+		padding: 10px 0 10px 25px;
+		background-color: #fff;
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+		font-size: 18px;
+		letter-spacing: 1.1px;
+	}
+	&__search-reset {
+		width: 60px;
+		position: relative;
+		display: inline-flex;
+		background: $Bilberry;
+		justify-content: center;
+		transition: all 0.3s ease;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 12px;
+			width: 25px;
+			height: 3px;
+			border-radius: 2px;
+			background: #fff;
+			transition: all 0.3s ease;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 12px;
+			width: 25px;
+			height: 3px;
+			border-radius: 2px;
+			background: #fff;
+			transition: all 0.3s ease;
+		}
+		&:hover::before {
+			transform: rotate(-45deg);
+			top: 50%;
+			left: 20%;
+		}
+		&:hover::after {
+			transform: rotate(45deg);
+			top: 50%;
+			left: 20%;
+		}
+	}
+	&__list {
+		margin: 30px 0 0 0;
+		background: rgba($color: $Bilberry, $alpha: 0.8);
+		border-radius: 0 0 20px 20px;
+		display: flex;
+		flex-direction: column;
+		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	}
+	.card {
+		&__box {
+			display: flex;
+			justify-content: space-between;
+			margin: 30px;
+			position: relative;
+			&:not(:first-child) {
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					display: block;
+					width: 100%;
+					height: 2px;
+					background: $Midnight-sun;
+					box-shadow: 0 3px 10px 0.5px $Midnight-sun;
+				}
+			}
+			&:first-child {
+				width: 100%;
+				justify-content: space-between;
+				display: flex;
+				background-color: rgba($color: $Midnight-sun, $alpha: 0.5);
+				color: white;
+				padding: 15px 20px 30px;
+				margin: 0 0 40px 0;
+			}
+		}
+		&__first-box-temprature-value {
+			font-weight: 900;
+			font-size: 40px;
+		}
+		&__first-box-temprature-feels-like {
+			margin: 5px 0 0 0;
+			font-size: 600px;
+			font-size: 20px;
+		}
+		&__first-box-description-text {
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 16px;
+			letter-spacing: 1px;
+			margin: 15px 0 0 0;
+		}
+		&__first-box-target-city {
+			font-weight: 600;
+			letter-spacing: 1px;
+			margin: 5px 0 0 0;
+		}
+		&__first-box-img {
+			width: 70px;
+			height: 70px;
+			position: relative;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__box-day-is {
+			width: 40px;
+			font-weight: 600;
+			font-size: 20px;
+			letter-spacing: 1px;
+		}
+		&__box-img {
+			width: 70px;
+			height: 40px;
+			position: relative;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__box-description-text {
+			width: 120px;
+			text-align: center;
+			letter-spacing: 0.5px;
+			font-size: 16px;
+		}
+		&__box-temprature-value {
+			font-size: 18px;
+			font-weight: 600;
+			color: whitesmoke;
+		}
+		&__box-temprature-feels-like {
+			text-align: end;
+			font-size: 14px;
+			font-weight: 600;
+			margin: 3px 0 0 0;
+		}
+		&__box-error {
+			background: #d0e1f9;
+		}
+		&__error {
+			text-align: center;
+			overflow: hidden;
+		}
+		&__error-message {
+			margin: 20px 0 0 0;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 120%;
+			letter-spacing: 0.7px;
+			font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+		}
+		&__error-img {
+			margin: 0 auto;
+			position: relative;
+			height: 250px;
+			width: 250px;
+			border-radius: 50px;
+			overflow: hidden;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
