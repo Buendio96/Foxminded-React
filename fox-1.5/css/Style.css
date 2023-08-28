@@ -1,0 +1,102 @@
+@import url("/css/Reset.css");
+@import url("https://fonts.googleapis.com/css?family=Alkatra:regular,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Oswald:500&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Fasthand:regular&subset=cyrillic");
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallax {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.parallax__title {
+  font-family: "Alkatra", cursive;
+  font-size: 65px;
+  color: #fdf6ea;
+  text-shadow: 4px 0 25px #141212;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.item-1 {
+  background: url("/source/Winter.jpg") 0 0/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.item-2 {
+  background: url("/source/Spring.jpg") 0 0/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.item-3 {
+  background: url("/source/Summer.jpg") 0 0/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.item-4 {
+  background: url("/source/Autumn.jpg") 0 0/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 10%;
+  -webkit-box-shadow: 0 0 50px 25px #ece9e3;
+          box-shadow: 0 0 50px 25px #ece9e3;
+  background-color: #ece9e3;
+  position: relative;
+}
+.content__title {
+  font-size: 25px;
+  font-family: "Fasthand", cursive;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  letter-spacing: 1.2px;
+}
+.content__text {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.7;
+  margin: 0 0 10px 0;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  gap: 100px;
+}
+.content__author {
+  font-family: "Alkatra", cursive;
+  font-size: 18px;
+  font-weight: 600;
+  -ms-flex-item-align: end;
+      align-self: end;
+}

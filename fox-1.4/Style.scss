@@ -1,0 +1,86 @@
+body {
+	width: 100%;
+	background-color: gray;
+	margin: 0;
+	padding: 0;
+}
+.main {
+	width: 60%;
+	height: 450px;
+	border-radius: 100%;
+	margin: 10% auto;
+	padding: 0 40px;
+	background-color: rgb(22, 22, 22);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.pac-man {
+	width: 150%;
+	height: 200px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border: 100px solid rgb(211, 194, 42);
+		border-right: 100px solid transparent;
+		border-radius: 50%;
+		animation: animation-1 linear 0.5s infinite;
+	}
+	&:after {
+		animation: animation-2 linear 0.5s infinite;
+	}
+	@keyframes animation-1 {
+		0% {
+			transform: rotate(270deg);
+		}
+		50% {
+			transform: rotate(360deg);
+		}
+		100% {
+			transform: rotate(270deg);
+		}
+	}
+	@keyframes animation-2 {
+		0% {
+			transform: rotate(90deg);
+		}
+		50% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(90deg);
+		}
+	}
+}
+.eat {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	animation: eating 0.5s linear infinite;
+	&::before {
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+	@keyframes eating {
+		0% {
+			transform: translateX(50%);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+}
