@@ -1,0 +1,50 @@
+.background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(47, 79, 79, 0.5);
+	backdrop-filter: blur(5px);
+}
+
+.popap {
+	width: 500px;
+	height: 600px;
+	background: #fffafa;
+	box-shadow: 0 0 10px 1px black;
+	border-radius: 25px 0 0 25px;
+	justify-content: space-between;
+	display: flex;
+}
+.list {
+	min-height: 100%;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.item {
+	display: flex;
+	column-gap: 35px;
+	align-items: center;
+	letter-spacing: 0.7px;
+	img {
+		width: 30px;
+		height: 30px;
+	}
+}
+.info_title {
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Times New Roman";
+}
+.info_subtitle {
+	font-size: 14px;
+	color: #808080de;
+	font-weight: 700;
+	font-family: "Segoe UI";
+}
